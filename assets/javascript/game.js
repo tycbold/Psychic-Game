@@ -1,3 +1,5 @@
+alert("Turn up your volume (maybe not too loud)");
+
 // Variables
 
 var options = ["q", "w", "e", "r", "t", "y", "u", "i", "o", 
@@ -26,10 +28,19 @@ document.onkeyup = function () {
 
 	var pushedLetters = guessedLetters.indexOf(userGuess);
 
-	
+	console.log(psychicGuess);
+
+	// Sound effects
+
+	var harp = new Audio("harp.wav");
+	var bang = new Audio("bang.wav");
+
+	// Conditions
+
 	if (userGuess == psychicGuess) {
+		harp.play();
 		wins++;
-		reset ();
+		reset();
 	}
 
 	if (userGuess !== psychicGuess && pushedLetters == -1) {
@@ -38,17 +49,20 @@ document.onkeyup = function () {
 	}
 
 	if (guessesLeft == 0) {
+		bang.play();
 		losses++;
-		reset ();
+		reset();
 	}
-	if (pushedLetters !== -1){
-		alert("You guessed this already!")
 
+	if (pushedLetters !== -1){
+		alert("You guessed that already!")
 	}
+
 
 // Pushing results to html file
 
 	var gameText = "<h1>Guess what letter I'm thinking of</h1>"
+	+ "<h2>Press any letter key</h2>"
 	+ "<p>Wins: " + wins + "</p>"
 	+ "<p>Losses: " + losses + "</p>"
 	+ "<p>Guesses Left: " + guessesLeft + "</p>"
@@ -56,7 +70,9 @@ document.onkeyup = function () {
 
 	document.querySelector("#game").innerHTML = gameText;
 
+
 }
+
 
 
 

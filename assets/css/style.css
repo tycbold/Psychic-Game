@@ -1,13 +1,38 @@
 body {
-	background-color: lightblue;
+	background: url("../images/stars.jpg");
 	text-align: center;
 	margin: auto;
+	color: white;
 }
 
 h1 {
-	font-family: cursive;
+	font-family: 'The Girl Next Door', cursive;
+	padding: 30px;
+	font-size: 36px;
+}
+
+h2 {
+	font-family: 'The Girl Next Door', cursive;
+	padding: 20px;
+	font-size: 16px;
 }
 
 p {
-	font-family: Arial;
+	font-family: Georgia;
+	padding: 20px;
+	font-size: 20px;
+	background-color: rgba(179, 171, 191, 0.25);
+	width: 200px;
+	margin: auto;
+	line-height: 1.5em;
+
 }
+
+#game {
+	
+}
+
+
+/*Animation here*/
+
+/*key code event, only letters. Look up key codes*/
