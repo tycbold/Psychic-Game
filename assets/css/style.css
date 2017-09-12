@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-	font-family: Georgia;
+	font-family: Georgia, serif;
 	padding: 20px;
 	font-size: 20px;
 	background-color: rgba(179, 171, 191, 0.25);
@@ -27,12 +27,3 @@ p {
 	line-height: 1.5em;
 
 }
-
-#game {
-	
-}
-
-
-/*Animation here*/
-
-/*key code event, only letters. Look up key codes*/

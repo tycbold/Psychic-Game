@@ -66,7 +66,7 @@ document.onkeyup = function () {
 	+ "<p>Wins: " + wins + "</p>"
 	+ "<p>Losses: " + losses + "</p>"
 	+ "<p>Guesses Left: " + guessesLeft + "</p>"
-	+ "<p>Guessed Letters: " + guessedLetters + ", </p>";
+	+ "<p>Guessed Letters: " + guessedLetters + ", " + "</p>";
 
 	document.querySelector("#game").innerHTML = gameText;
 
