@@ -21,7 +21,7 @@ function reset () {
 		*options.length)];
 }
 
-document.onkeyup = function () {
+document.onkeydown = function () {
 
 	var userGuess = String.fromCharCode(event.keyCode)
 	.toLowerCase();
